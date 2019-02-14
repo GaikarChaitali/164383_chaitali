@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- quetsion 1 -->
+	<!-- <bean id="address" class="com.chaitali.project.AssignmentFolder.Address">
+		<property name="street" value="MG Road" />
+		<property name="city" value="Panvel" />
+		<property name="state" value="Maharashtra" />
+		<property name="country" value="India" />
+		<property name="zip" value="400001" />
+	</bean>
+
+	<bean id="customer" class="com.chaitali.project.AssignmentFolder.Customer">
+		<property name="customerId" value="123" />
+		<property name="customerName" value="Chaitali" />
+		<property name="customerContact" value="67543945" />
+		<property name="customerAddress" ref="address" />
+	</bean>
+
+
+    question 2
+	<bean id="question" class="com.chaitali.project.AssignmentFolder.Question">
+		<property name="questionId" value="1" />
+		<property name="question" value="which is/are access modifiers ?" />
+		<property name="answerlist">
+			<list>
+				<value>Public</value>
+				<value>Private</value>
+				<value>Protected</value>
+				<value>All of the above</value>
+			</list>
+		</property>
+
+
+		<property name="answerset">
+			<set>
+				<value>Public</value>
+				<value>Private</value>
+				<value>Protected</value>
+				<value>All of the above</value>
+			</set>
+		</property>
+
+		<property name="answermap">
+			<map>
+				<entry key="1" value="public" />
+				<entry key="2" value="private" />
+				<entry key="3" value="protected" />
+				<entry key="4" value="all of the above" />
+			</map>
+		</property>
+	</bean>
+
+ -->
+
+<!-- question 3 -->
+
+
+
+
+<bean id="bankAccountController" class="com.chaitali.project.AssignmentFolder.BankAccountController" autowire="byType"/>
+
+
+<bean id="bankAccountServiceImpl" class="com.chaitali.project.AssignmentFolder.BankAccountServiceImpl" autowire="byType"/>
+
+
+<bean id="bankAccountRepositoryImpl" class="com.chaitali.project.AssignmentFolder.BankAccountRepositoryImpl" autowire="byType"/>
+
+
+<bean id="accountNo1" class="com.chaitali.project.AssignmentFolder.BankAccount">
+<property name="accountId" value="123"/>
+<property name="accountHolderName" value="chaitali"/>
+<property name="accountType" value="current"/>
+<property name="accountBalance" value="200000"/>
+</bean>
+
+<bean id="accountNo2" class="com.chaitali.project.AssignmentFolder.BankAccount">
+<property name="accountId" value="124"/>
+<property name="accountHolderName" value="karan"/>
+<property name="accountType" value="current"/>
+<property name="accountBalance" value="800500"/>
+</bean>
+
+
+
+
+
+
+
+
+
+	<!-- <question 5>
+    <context:annotation-config />
+
+   <bean id="school" class="com.chaitali.project.AssignmentFolder.School">
+
+		<property name="stream" value="Computer Science" />
+		<property name="name" value="CK Thakur" />
+
+	</bean> 
+	
+	<bean id="student" class="com.chaitali.project.AssignmentFolder.Student">
+
+		<property name="sName" value="simer" />
+	    <property name="rollNo" value="5" />
+	    <property name="stream" value="ec" /> 
+    </bean>
+
+	question 8
+	
+	<bean id="employee" class="com.chaitali.project.AssignmentFolder.Employee" init-method="init" destroy-method="destroy">
+	<property name="eName" value="rima" />
+	<property name="empId" value="14" />
+	<property name="Salary" value="60000" />
+	</bean>
+	 -->
+
+
+</beans>
